@@ -1,17 +1,17 @@
 management:
-    endpoint:
-        shutdown:
-            enabled: true
-    endpoints:
-        web:
-            exposure:
-                include: '*'
-    security:
-        enabled: false
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka
+      default-zone: 'http://localhost:8761/eureka'
   h2:
     console:
       enabled: true
@@ -19,4 +19,4 @@ eureka:
     show-sql: true
 currency-exchange-service:
   ribbon:
-    listOfServers: http://localhost:9021,http://localhost:9022
+    listOfServers: 'http://localhost:9021,http://localhost:9022'
